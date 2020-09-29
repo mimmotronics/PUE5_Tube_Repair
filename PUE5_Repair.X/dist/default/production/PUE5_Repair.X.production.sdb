@@ -1,0 +1,275 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1828 ]
+[d frameptr 6 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"86 C:\Users\mimmo\Desktop\pue5 repair\PUE5_Repair.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"473
+[v _updateDelaySetpoint updateDelaySetpoint `(v  1 e 1 0 ]
+"495
+[v _SPI_Write SPI_Write `(v  1 e 1 0 ]
+"513
+[v _EEPROM_Read EEPROM_Read `(uc  1 e 1 0 ]
+"522
+[v _EEPROM_Write EEPROM_Write `(v  1 e 1 0 ]
+[s S275 . 1 `uc 1 C 1 0 :1:0 
+`uc 1 DC 1 0 :1:1 
+`uc 1 Z 1 0 :1:2 
+`uc 1 nPD 1 0 :1:3 
+`uc 1 nTO 1 0 :1:4 
+]
+"131 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1828.h
+[s S281 . 1 `uc 1 CARRY 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ZERO 1 0 :1:2 
+]
+[u S285 . 1 `S275 1 . 1 0 `S281 1 . 1 0 ]
+[v _STATUSbits STATUSbits `VES285  1 e 1 @3 ]
+[s S299 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"374
+[s S308 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S313 . 1 `S299 1 . 1 0 `S308 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES313  1 e 1 @11 ]
+[s S332 . 1 `uc 1 CCP2IF 1 0 :1:0 
+`uc 1 . 1 0 :2:1 
+`uc 1 BCL1IF 1 0 :1:3 
+`uc 1 EEIF 1 0 :1:4 
+`uc 1 C1IF 1 0 :1:5 
+`uc 1 C2IF 1 0 :1:6 
+`uc 1 OSFIF 1 0 :1:7 
+]
+"658
+[u S340 . 1 `S332 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES340  1 e 1 @18 ]
+[s S46 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+]
+"1181
+[u S53 . 1 `S46 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES53  1 e 1 @140 ]
+[s S63 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1230
+[u S69 . 1 `S63 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES69  1 e 1 @141 ]
+[s S78 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1272
+[u S87 . 1 `S78 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES87  1 e 1 @142 ]
+"1721
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1882
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+[s S129 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+"1927
+[s S137 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+[s S141 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[u S144 . 1 `S129 1 . 1 0 `S137 1 . 1 0 `S141 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES144  1 e 1 @157 ]
+[s S99 . 1 `uc 1 ADPREF0 1 0 :1:0 
+`uc 1 ADPREF1 1 0 :1:1 
+`uc 1 ADNREF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCS0 1 0 :1:4 
+`uc 1 ADCS1 1 0 :1:5 
+`uc 1 ADCS2 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"2004
+[s S108 . 1 `uc 1 ADPREF 1 0 :2:0 
+`uc 1 . 1 0 :2:2 
+`uc 1 ADCS 1 0 :3:4 
+]
+[u S112 . 1 `S99 1 . 1 0 `S108 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES112  1 e 1 @158 ]
+"2893
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+[s S26 . 1 `uc 1 ANSA0 1 0 :1:0 
+`uc 1 ANSA1 1 0 :1:1 
+`uc 1 ANSA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ANSA4 1 0 :1:4 
+]
+"2910
+[s S32 . 1 `uc 1 ANSELA 1 0 :5:0 
+]
+[u S34 . 1 `S26 1 . 1 0 `S32 1 . 1 0 ]
+[v _ANSELAbits ANSELAbits `VES34  1 e 1 @396 ]
+"2940
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"2976
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"3042
+[v _EEADRL EEADRL `VEuc  1 e 1 @401 ]
+"3089
+[v _EEDATL EEDATL `VEuc  1 e 1 @403 ]
+[s S253 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 LWLO 1 0 :1:5 
+`uc 1 CFGS 1 0 :1:6 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"3164
+[u S262 . 1 `S253 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES262  1 e 1 @405 ]
+"3209
+[v _EECON2 EECON2 `VEuc  1 e 1 @406 ]
+"3720
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @529 ]
+[s S190 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"3856
+[u S199 . 1 `S190 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES199  1 e 1 @532 ]
+[s S164 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"3989
+[s S173 . 1 `uc 1 SSPM 1 0 :4:0 
+]
+[u S175 . 1 `S164 1 . 1 0 `S173 1 . 1 0 ]
+[v _SSP1CONbits SSP1CONbits `VES175  1 e 1 @533 ]
+"7865
+[v _RA4 RA4 `VEb  1 e 0 @100 ]
+"7868
+[v _RA5 RA5 `VEb  1 e 0 @101 ]
+"7871
+[v _RB4 RB4 `VEb  1 e 0 @108 ]
+"7874
+[v _RB5 RB5 `VEb  1 e 0 @109 ]
+"7880
+[v _RB7 RB7 `VEb  1 e 0 @111 ]
+"7883
+[v _RC0 RC0 `VEb  1 e 0 @112 ]
+"7886
+[v _RC1 RC1 `VEb  1 e 0 @113 ]
+"7889
+[v _RC2 RC2 `VEb  1 e 0 @114 ]
+"7892
+[v _RC3 RC3 `VEb  1 e 0 @115 ]
+"7895
+[v _RC4 RC4 `VEb  1 e 0 @116 ]
+"7898
+[v _RC5 RC5 `VEb  1 e 0 @117 ]
+"7901
+[v _RC6 RC6 `VEb  1 e 0 @118 ]
+"86 C:\Users\mimmo\Desktop\pue5 repair\PUE5_Repair.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"90
+[v main@MCP_GPIOB MCP_GPIOB `uc  1 a 1 13 ]
+"89
+[v main@MCP_GPIOA MCP_GPIOA `uc  1 a 1 12 ]
+"92
+[v main@db_cnt db_cnt `uc  1 a 1 11 ]
+"94
+[v main@mode mode `uc  1 a 1 10 ]
+"95
+[v main@bypass_update_flag bypass_update_flag `a  1 a 1 9 ]
+"161
+[v main@bypass bypass `uc  1 a 1 8 ]
+"91
+[v main@result result `uc  1 a 1 7 ]
+"466
+} 0
+"473
+[v _updateDelaySetpoint updateDelaySetpoint `(v  1 e 1 0 ]
+{
+"492
+} 0
+"495
+[v _SPI_Write SPI_Write `(v  1 e 1 0 ]
+{
+[v SPI_Write@address address `uc  1 a 1 wreg ]
+"509
+[v SPI_Write@j_432 j `uc  1 a 1 4 ]
+"501
+[v SPI_Write@j j `uc  1 a 1 3 ]
+"495
+[v SPI_Write@address address `uc  1 a 1 wreg ]
+[v SPI_Write@data data `uc  1 p 1 0 ]
+[v SPI_Write@address address `uc  1 a 1 2 ]
+"510
+} 0
+"522
+[v _EEPROM_Write EEPROM_Write `(v  1 e 1 0 ]
+{
+[v EEPROM_Write@addr addr `uc  1 a 1 wreg ]
+[v EEPROM_Write@addr addr `uc  1 a 1 wreg ]
+[v EEPROM_Write@data data `uc  1 p 1 0 ]
+[v EEPROM_Write@addr addr `uc  1 a 1 1 ]
+"545
+} 0
+"513
+[v _EEPROM_Read EEPROM_Read `(uc  1 e 1 0 ]
+{
+[v EEPROM_Read@addr addr `uc  1 a 1 wreg ]
+[v EEPROM_Read@addr addr `uc  1 a 1 wreg ]
+[v EEPROM_Read@addr addr `uc  1 a 1 0 ]
+"519
+} 0
